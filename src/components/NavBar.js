@@ -34,6 +34,8 @@ const NavBar = () => {
 		showButton();
 	}, []);
 
+	window.addEventListener("resize", showButton);
+	window.addEventListener("scroll", changeNavbar);
 
 
 	return (
