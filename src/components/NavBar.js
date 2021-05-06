@@ -21,7 +21,36 @@ const Navbar = () => {
 						{click ? <FaTimes/> : <FaBars/>}
 					</div>
 					<ul className={click ? "nav-menu active" : "nav-menu"}>
-						
+						<li className="nav-item">
+							<Link to="/" className="nav-links">
+							Home 
+							</Link>
+						</li>
+						<li className="nav-item">
+							<Link to="/" className="nav-links">
+							About 
+							</Link>
+						</li>
+						<li className="nav-item">
+							<Link to="/" className="nav-links">
+							Services 
+							</Link>
+						</li>
+						<li className="nav-item">
+							<Link to="/" className="nav-links">
+							Gym 
+							</Link>
+						</li>
+						<li className="nav-item">
+							<Link to="/" className="nav-links">
+							FAQ 
+							</Link>
+						</li>
+						<li className="nav-item">
+							<Link to="/" className="nav-links">
+							Contact  
+							</Link>
+						</li>
 					</ul>
 				</div>
 			</div>
