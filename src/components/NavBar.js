@@ -22,6 +22,12 @@ const NavBar = () => {
 		}
 	};
 
+	useEffect(() => {
+		showButton();
+	}, []);
+
+
+
 	return (
 		<>
 			<div className={scrolled ? "navbar active" : "navbar"}>
