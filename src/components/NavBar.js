@@ -46,10 +46,16 @@ const Navbar = () => {
 							FAQ 
 							</Link>
 						</li>
-						<li className="nav-item">
-							<Link to="/" className="nav-links">
-							Contact  
-							</Link>
+						<li className="nav-btn">
+							{button ? (
+								<Link to="/contact" className="btn-link">
+									<Button buttonStyle="btn--outline">Contact</Button>
+								</Link>
+							) : (
+								<Link to="/" className="btn-link">
+									<Button buttonStyle="btn--outline" buttonSize="btn--mobile"> Contact</Button>
+								</Link>
+							)}
 						</li>
 					</ul>
 				</div>
