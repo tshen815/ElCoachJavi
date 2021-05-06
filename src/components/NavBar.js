@@ -22,6 +22,14 @@ const NavBar = () => {
 		}
 	};
 
+	const changeNavbar = () => {
+		if (window.scrollY >= 20) {
+			setScrolled(true);
+		} else {
+			setScrolled(false);
+		}
+	};
+
 	useEffect(() => {
 		showButton();
 	}, []);
