@@ -42,36 +42,36 @@ const NavBar = () => {
 		<>
 			<div className={scrolled ? "navbar active" : "navbar"}>
 				<div className="navbar-container container">
-					<Link to="/" className="navbar-logo">
+					<Link to="/" className="navbar-logo" onClick={closeMobileMenu}>
 						<GiBoxingGloveSurprise className="navbar-icon" />
 						El Coach Javi
 					</Link>
-					<div className="menu-icon">
+					<div className="menu-icon" onClick={toggleClick}>
 						{click ? <FaTimes /> : <FaBars />}
 					</div>
 					<ul className={click ? "nav-menu active" : "nav-menu"}>
 						<li className="nav-item">
-							<Link to="/" className="nav-links">
+							<Link to="/" className="nav-links" onClick={toggleClick}>
 								Home
 							</Link>
 						</li>
 						<li className="nav-item">
-							<Link to="/" className="nav-links">
+							<Link to="/" className="nav-links" onClick={toggleClick}>
 								About
 							</Link>
 						</li>
 						<li className="nav-item">
-							<Link to="/" className="nav-links">
+							<Link to="/" className="nav-links" onClick={toggleClick}>
 								Services
 							</Link>
 						</li>
 						<li className="nav-item">
-							<Link to="/" className="nav-links">
+							<Link to="/" className="nav-links" onClick={toggleClick}>
 								Gym
 							</Link>
 						</li>
 						<li className="nav-item">
-							<Link to="/" className="nav-links">
+							<Link to="/" className="nav-links" onClick={toggleClick}>
 								FAQ
 							</Link>
 						</li>
@@ -82,7 +82,7 @@ const NavBar = () => {
 								</Link>
 							) : (
 								<Link to="/" className="btn-link">
-									<Button buttonStyle="btn--outline" buttonSize="btn--mobile"> Contact</Button>
+									<Button buttonStyle="btn--outline" buttonSize="btn--mobile" onClick={toggleClick}> Contact</Button>
 								</Link>
 							)}
 						</li>
