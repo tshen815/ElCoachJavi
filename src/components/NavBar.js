@@ -11,6 +11,9 @@ const NavBar = () => {
 	const [scrolled, setScrolled] = useState(false);
 	const [button, setButton] = useState(true);
 
+	const toggleClick = () => setClick(!click);
+	const closeMobileMenu = () => setClick(false)
+
 	return (
 		<>
 			<div className={scrolled ? "navbar active" : "navbar"}>
